@@ -33,7 +33,7 @@ public class LoginTest_Negative extends TestBase{
 	{
 		String tit = loginPage.validateLandingPageTitle();
 		Assert.assertEquals(tit, prop.get("LandingPageTitle"));
-//		test.log(Status.PASS,"User Landing to the correct page | LandingPage Title: "+tit);
+		test.log(Status.PASS,"User Landing to the correct page | LandingPage Title: "+tit);
 	}
 	
 	@Parameters({"InvalidUsername","InvalidPassword"})
